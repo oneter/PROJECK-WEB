@@ -1,3 +1,7 @@
+ol, ul {
+  padding: 0;
+}
+
 .first-block__header {
   position: fixed;
   bottom: 0;
@@ -141,6 +145,7 @@
     margin-right: 30px;
   }
   .menu__list > li:hover {
+    color: #fff;
     border-bottom: 5px solid #f04d35;
     transition: border 0.09s;
   }

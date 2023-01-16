@@ -47,6 +47,7 @@
   justify-content: space-around;
 }
 .first-block-cards .card {
+  background: transparent;
   flex-basis: 40%;
   height: 80px;
   box-sizing: content-box;

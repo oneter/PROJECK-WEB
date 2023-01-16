@@ -90,6 +90,10 @@ a {
   color: inherit;
 }
 
+ol, ul {
+  padding: 0;
+}
+
 .first-block__header {
   position: fixed;
   bottom: 0;
@@ -233,6 +237,7 @@ a {
     margin-right: 30px;
   }
   .menu__list > li:hover {
+    color: #fff;
     border-bottom: 5px solid #f04d35;
     transition: border 0.09s;
   }
@@ -318,6 +323,7 @@ a {
   justify-content: space-around;
 }
 .first-block-cards .card {
+  background: transparent;
   flex-basis: 40%;
   height: 80px;
   box-sizing: content-box;
