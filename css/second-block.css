@@ -12,34 +12,23 @@
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 55px;
+  opacity: 0.7;
 }
 .second-block__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .second-block__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  flex-direction: column;
+  flex-basis: 45%;
   margin: 0 0 50px 0;
 }
 .second-block__card-logo {
   display: block;
   position: relative;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   margin: 0 0 25px;
   line-height: 20px;
 }
@@ -62,6 +51,7 @@
   line-height: 20px;
   font-size: 14px;
   font-weight: 500;
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 767px) {
@@ -79,17 +69,13 @@
     line-height: 22px;
   }
   .second-block__cards {
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
+    justify-content: unset;
   }
   .second-block__card {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+    flex-basis: 25%;
   }
   .second-block__card-logo {
-    -ms-flex-item-align: start;
-        align-self: start;
+    align-self: start;
   }
   .second-block__card p {
     line-height: 22.85px;

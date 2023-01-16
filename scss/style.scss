@@ -6,10 +6,18 @@
 @import "menu.scss";
 @import "first-block.scss";
 @import "second-block.scss";
+@import "third-block.scss";
+@import "fourth-block.scss";
+@import "fifth-block.scss";
+.wrapper {
+    overflow: hidden;
+    padding: 0 0 60px 0;
+}
 ._container {
     padding: 0 15px;
 }
 body {
+    color: #050c33;
     font-family: "Montserrat", sans-serif;
 }
 ._ibg {

@@ -2,13 +2,8 @@
   padding: 39px 0 55px 0;
   position: relative;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .first-block-text {
   text-align: center;
@@ -44,25 +39,17 @@
 }
 .first-block-button:hover {
   background: #f14d34;
-  -webkit-transition: background 0.3s;
-  -o-transition: background 0.3s;
   transition: background 0.3s;
 }
 .first-block-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .first-block-cards .card {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  flex-basis: 40%;
   height: 80px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   border-left: 3px solid #f14d34;
   padding-left: 10px;
   margin: 0 0 30px 0;
@@ -82,20 +69,17 @@
   opacity: 0.7;
 }
 .first-block-cards .card:first-child {
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
 }
 .first-block-cards .card:first-child .card-title {
   font-size: 48px;
   line-height: 29px;
 }
 .first-block-cards .card:nth-child(n) {
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
 }
 .first-block-cards .card:nth-child(n+4) {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 @media screen and (min-width: 767px) {
@@ -108,10 +92,7 @@
   }
   .first-block__content {
     padding: 140px 0 154px 0;
-    -webkit-box-orient: unset;
-    -webkit-box-direction: unset;
-        -ms-flex-direction: unset;
-            flex-direction: unset;
+    flex-direction: unset;
   }
   .first-block-title {
     font-size: 52px;
@@ -126,8 +107,7 @@
     margin-bottom: 0;
   }
   .first-block-cards .card {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    flex-basis: 30%;
     margin: 0;
   }
 }
