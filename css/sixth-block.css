@@ -1,0 +1,30 @@
+.sixth-block__title {
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+.sixth-block__team {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sixth-block__team-card {
+  flex-basis: 48%;
+}
+.sixth-block__team-card-name {
+  font-size: 26.5px;
+  line-height: 31.7px;
+  margin: 0 0 8px 0;
+}
+.sixth-block__team-card-work {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (min-width: 767px) {
+  .sixth-block__team-card {
+    flex-basis: 25.01%;
+  }
+}

@@ -1,0 +1,13 @@
+.seventh-block__cases {
+  display: flex;
+  flex-wrap: wrap;
+}
+.seventh-block__case {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 767px) {
+  .seventh-block__case {
+    flex-basis: 28%;
+  }
+}

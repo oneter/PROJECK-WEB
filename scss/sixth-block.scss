@@ -1,0 +1,35 @@
+.sixth-block{
+    &__title{
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    &__team{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        &-card{
+            flex-basis: 48%;
+            &-name{
+                font-size: 26.5px;
+                line-height: 31.7px;
+                margin: 0 0 8px 0;
+            }
+            &-work{
+                font-size: 13px;
+                line-height: 20px;
+                margin: 0 0 16px 0;
+            }
+        }
+    }
+}
+@media screen and(min-width:767px){
+    .sixth-block{
+        &__team{
+            &-card{
+                flex-basis: 25.01%;
+            }
+        }
+    }
+}
