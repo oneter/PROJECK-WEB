@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Ubuntu:wght@500&display=swap");
 //-----------------------------------
 
-@import "nullstyle.scss";
+//@import "nullstyle.scss";
 @import "menu.scss";
 @import "first-block.scss";
 @import "second-block.scss";
@@ -11,6 +11,18 @@
 @import "fifth-block.scss";
 @import "sixth-block.scss";
 @import "seventh-block.scss";
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
 .wrapper {
     overflow: hidden;
     padding: 0 0 60px 0;

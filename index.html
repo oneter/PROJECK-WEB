@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="src/modal.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>Drupal coder</title>
@@ -270,10 +271,16 @@
                             <li>Неиспользованные оплаченные часы переносятся на следующий месяц</li>
                         </ul>
                         <div class="fifth-block__tarif-footer">
-                            <a href="#footerRegion" role="button" class="fifth-block__tarif-button">Свяжитесь
-                                с нами!</a>
+                            <!--<a href="" role="button" class="fifth-block__tarif-button plans__btn">
+                                <div id="modal">Свяжитесь
+                                    с нами!</div>
+                            </a>-->
+                            <div id="modal"><input class="fifth-block__tarif-button plans__btn" type="button"
+                                    value="ОСТАВИТЬ ЗАЯВКУ!">
+                            </div>
                         </div>
                     </div>
+
                     <div class="fifth-block__tarif">
                         <div class="fifth-block__tarif-price-header">
                             <p>
@@ -289,8 +296,9 @@
                             <li>Неиспользованные часы не переносятся</li>
                         </ul>
                         <div class="fifth-block__tarif-footer">
-                            <a href="#footerRegion" role="button" class="fifth-block__tarif-button">Свяжитесь
-                                с нами!</a>
+                            <div id="modal"><input class="fifth-block__tarif-button plans__btn" type="button"
+                                    value="ОСТАВИТЬ ЗАЯВКУ!">
+                            </div>
                         </div>
                     </div>
                     <div class="fifth-block__tarif">
@@ -308,8 +316,9 @@
                             <li>Неиспользованные часы не переносятся</li>
                         </ul>
                         <div class="fifth-block__tarif-footer">
-                            <a href="#footerRegion" role="button" class="fifth-block__tarif-button">Свяжитесь
-                                с нами!</a>
+                            <div id="modal"><input class="fifth-block__tarif-button plans__btn" type="button"
+                                    value="ОСТАВИТЬ ЗАЯВКУ!">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -775,6 +784,9 @@
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="slick/slick.min.js" defer></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="modal.js"></script>
 </body>
 
 </html>

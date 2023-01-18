@@ -74,6 +74,39 @@ $(document).ready(function () {
     });
 });
 
+/*-------------------------------------------*/
+const names = document.getElementsByName('userName');
+let phone = document.getElementsByName('userPhone');
+let email = document.getElementsByName('userEmail');
+let checkbox = document.getElementById('check');
+
+function save() {
+    localStorage.setItem('Имя', names[0].value);
+    localStorage.setItem('Номер телефона', phone[0].value);
+    localStorage.setItem('Эл. почта', email[0].value);
+    if (checkbox.checked) {
+        localStorage.setItem('Согласие', 1);
+    } else {
+        localStorage.setItem('Согласие', 0);
+    };
+}
+document.addEventListener('DOMContentLoaded', () => {
+    names[0].value = localStorage.getItem('Имя');
+    email[0].value = localStorage.getItem('Эл. почта');
+    phone[0].value = localStorage.getItem('Номер телефона');
+    let checkBox = localStorage.getItem('Согласие');
+    if (checkBox == 1) {
+        checkbox.checked = true;
+    } else if (checkBox == 0) {
+        checkbox.checked = false;
+    }
+
+    names[0].oninput = save;
+    email[0].oninput = save;
+    phone[0].oninput = save;
+    checkbox.oninput = save;
+});
+/*-------------------------------------------*/
 $(document).ready(function () {
 
     $("#check").change(function () {
@@ -99,7 +132,6 @@ $(document).ready(function () {
                 data.forEach((element) => { element.value = ""; });
                 $("#check").prop("checked", false);
                 $("#submitButton").prop("disabled", true);
-                localStorage.clear();
             })
             .catch((error) => { alert(error); })
     };
@@ -124,3 +156,19 @@ $(document).ready(function () {
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    names.value = localStorage.getItem('Имя');
+    email.value = localStorage.getItem('Эл. почта');
+    sms.value = localStorage.getItem('Сообщение');
+    let checkBox = localStorage.getItem('Согласие');
+    if (checkBox == 1) {
+        checkbox.checked = true;
+    } else if (checkBox == 0) {
+        checkbox.checked = false;
+    }
+
+    names.oninput = save;
+    email.oninput = save;
+    sms.oninput = save;
+    checkbox.oninput = save;
+}); 

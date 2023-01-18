@@ -1,3 +1,6 @@
+.first-block a {
+  color: #fff;
+}
 .first-block__content {
   padding: 39px 0 55px 0;
   position: relative;

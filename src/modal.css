@@ -1,0 +1,41 @@
+.modal {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.modal__content {
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),url(img/D-flying.svg) no-repeat top center,url(img/D-footer.svg) no-repeat bottom right,#040613;;
+    transition: 0.4s all;
+    opacity: 1;
+}
+
+.webform__form-btn:hover{
+    border-color: #fff;
+    background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),url(img/D-flying.svg) no-repeat top center,url(img/D-footer.svg) no-repeat bottom right,#040613;;
+}
+.modal__content a{
+    color:#f13d14;
+}
+.modal__content input:not(.checkbox__input){
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 6px 12px;
+    background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),url(img/D-flying.svg) no-repeat top center,url(img/D-footer.svg) no-repeat bottom right,#040613;
+    border-color: #fff;
+    color: #fff;
+}
+.checkbox__label {
+    color:#fff;
+}

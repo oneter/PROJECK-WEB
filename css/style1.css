@@ -52,7 +52,7 @@ margin: 0 0 46px 0;
     bottom:0;
     left:0;
     right:0;
-    z-index: 1000;
+    z-index: 10;
 }
 .blog-desc p{
     color: black;
@@ -310,4 +310,22 @@ margin: 0 0 46px 0;
         margin-top: 30px;
         margin-bottom: 40px;
     }
+}
+.plans__btn{
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #f14d34;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 6px 12px;
+    border: 1px solid #f14d34;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    background: #fff;
+}
+.fifth-block__tarif:hover .plans__btn{
+    color: #fff;
+    background: #f14d34;
 }
